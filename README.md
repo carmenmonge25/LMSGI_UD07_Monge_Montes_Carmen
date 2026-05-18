@@ -31,3 +31,6 @@ Detalle del comando para respaldar la base de datos relacional y los almacenes d
 ## 3.5. **Flujo Operativo de Facturación e Informes:** 
 Explicación paso a paso de cómo un usuario genera una factura en la interfaz y cómo el sistema renderiza el informe final a PDF (explicando de manera didáctica el pipeline HTML \-\> wkhtmltopdf \-\> PDF).
 
+# IV. Uso de IA:
+
+# V. Referencias:
