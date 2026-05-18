@@ -1,11 +1,20 @@
 # I. Generación del Informe Dinámico (QWeb XML) 
 Diseñaremos y programaremos la estructura XML de una plantilla de informe de factura personalizada para "WillmanTech S.L." utilizando la sintaxis de QWeb (motor de plantillas de ERPs modernos).
 
+## 1.1 Preparación del entorno:
+<ol>
+  <li>Debemos entrar en Odoo como administrador </li>
+  <li>Arriba a la izquierda nos vamos a Ajustes </li>
+  <li>Al final del todo en Herramientas de desarrollador activamos el modo desarrollador </li>
+  <li>El modo desarrollador estará activado si arriba a la derecha vemos un símbolo de bug al lado de las notificaciones </li>
+</ol>
+
+
 # II. Interoperabilidad de Datos (Extracción JSON/XML) 
 Para permitir que las facturas de "WillmanTech S.L." se incorporen a la plataforma de la Agencia Tributaria o se sincronicen con sistemas contables externos de manera asíncrona, debemos definir las estructuras de intercambio de datos en los siguientes dos ficheros:
 <ul>
-  <li>**invoice_export.json:** El archivo contendrá un array estructurado con la información de una factura de ejemplo recuperada dinámicamente mediante una consulta al ERP. Deberá contener campos relacionales anidados (ID de cliente, nombre, email, líneas de producto, precios y base imponible). </li>
-  <li>**invoice_ubl.xml:** Contrendrá un fragmento de factura electrónica simplificado que cumpla con las especificaciones del estándar internacional UBL (Universal Business Language), incluyendo obligatoriamente los namespaces de componentes agregados (cac) y componentes básicos (cbc), así como el ID de personalización europeo compatible con la red PEPPOL. </li>
+  <li><b>invoice_export.json:</b> El archivo contendrá un array estructurado con la información de una factura de ejemplo recuperada dinámicamente mediante una consulta al ERP. Deberá contener campos relacionales anidados (ID de cliente, nombre, email, líneas de producto, precios y base imponible). </li>
+  <li><b>invoice_ubl.xml:</b> Contrendrá un fragmento de factura electrónica simplificado que cumpla con las especificaciones del estándar internacional UBL (Universal Business Language), incluyendo obligatoriamente los namespaces de componentes agregados (cac) y componentes básicos (cbc), así como el ID de personalización europeo compatible con la red PEPPOL. </li>
 </ul>
 
 # III. Manual de Explotación bajo Norma ISO/IEC/IEEE 26514
