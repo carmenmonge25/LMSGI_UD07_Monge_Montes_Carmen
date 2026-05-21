@@ -36,12 +36,12 @@
     <cac:InvoiceLine>
         <cbc:ID>1</cbc:ID>
         <cbc:InvoicedQuantity unitCode="EA">10</cbc:InvoicedQuantity>
-        <cbc:LineExtensionAmount currencyID="ESP">100.00</cbc:LineExtensionAmount>
+        <cbc:LineExtensionAmount currencyID="EUR">100.00</cbc:LineExtensionAmount>
         <cac:item>
             <cbc:name>Product 1</cbc:name>
         </cac:item>
         <cac:Price>
-            <cbc:PriceAmount currencyID="ESP">10.00</cbc:PriceAmount>
+            <cbc:PriceAmount currencyID="EUR">10.00</cbc:PriceAmount>
         </cac:Price>
     </cac:InvoiceLine>
 </Invoice>
