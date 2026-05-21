@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
+         xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+         xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+         xmlns:peppol="http://peppol.eu/schema/peppol-ubl-2.0">
+    
+    <!-- Factura de ejemplo en formato UBL 2.0 -->
+    <cbc:ID>INV-001</cbc:ID>
+    <cbc:IssueDate>2024-06-01</cbc:IssueDate>
+
+    <!-- Proveedor -->
+    <cac:AccountingSupplierParty>
+        <cac:Party>
+            <cac:PartyIdentification>
+                <cbc:ID>SUPPLIER-001</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>Supplier Company</cbc:Name>
+            </cac:PartyName>
+        </cac:Party>
+    </cac:AccountingSupplierParty>
+
+    <!-- Cliente -->
+    <cac:AccountingCustomerParty>
+        <cac:Party>
+            <cac:PartyIdentification>
+                <cbc:ID>CUSTOMER-001</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>WillmanTech S.L.</cbc:Name>
+            </cac:PartyName>
+        </cac:Party>
+    </cac:AccountingCustomerParty>
+
+    <!-- Línea de factura -->
+    <cac:InvoiceLine>
+        <cbc:ID>1</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="EA">10</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="USD">100.00</cbc:LineExtensionAmount>
+        <cac:item>
+            <cbc:name>Product 1</cbc:name>
+        </cac:item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="USD">10.00</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+</Invoice>
